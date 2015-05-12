@@ -1,0 +1,1 @@
+function Set_Cookie(c,e,a,h,d,g){var b=new Date();b.setTime(b.getTime());if(a){a=a*1000*60*60*24}var f=new Date(b.getTime()+(a));document.cookie=c+"="+escape(e)+((a)?";expires="+f.toGMTString():"")+((h)?";path="+h:"")+((d)?";domain="+d:"")+((g)?";secure":"")};
