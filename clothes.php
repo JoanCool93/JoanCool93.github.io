@@ -10,16 +10,19 @@
 	<form name="formulario" action="pdf.php" method="POST">
 	<header>
 		<div class="container-fluid color2" align="center">
-			<div class="row">
-
+			<div class="header">
 				<div class="col-sm-3">
 					<br><img src="calvin_klein_logo_2623.gif" class="img-responsive" width="100" alt="">
 				</div>
 				<div class=" col-sm-6">
-					<h1>    Calvin Klein</h1>
+					<h1 class="fontcolor1">    Calvin Klein</h1>
 				</div>
-				<div class="col-xs-3"></div>
-				
+				<div class="col-xs-3">
+					<div class="header-signup">
+						<a href="ingresar.php">Ingresar</a>
+						<a href="registro.php">Registrarse</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</header>
