@@ -13,5 +13,6 @@ CREATE TABLE `clientes` (
 	`codigopostal` varchar(255),
 	`correo` varchar(255),
 	`telefono` varchar(255),
+	`contrasena` varchar(255),
 	PRIMARY KEY( `id` )
 );

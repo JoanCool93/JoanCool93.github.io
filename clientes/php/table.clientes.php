@@ -28,7 +28,8 @@ Editor::inst( $db, 'clientes', 'id' )
 		Field::inst( 'direccion' ),
 		Field::inst( 'codigopostal' ),
 		Field::inst( 'correo' ),
-		Field::inst( 'telefono' )
+		Field::inst( 'telefono' ),
+		Field::inst( 'contrasena' )
 	)
 	->process( $_POST )
 	->json();

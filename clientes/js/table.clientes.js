@@ -42,6 +42,10 @@ $(document).ready(function() {
 			{
 				"label": "Telefono",
 				"name": "telefono"
+			},
+			{
+				"label": "Contrase\u00f1a",
+				"name": "contrasena"
 			}
 		]
 	} );
@@ -73,6 +77,9 @@ $(document).ready(function() {
 			},
 			{
 				"data": "telefono"
+			},
+			{
+				"data": "contrasena"
 			}
 		],
 		"tableTools": {

@@ -28,76 +28,71 @@
 			</div>
 		</header>
 		<div class="container">
-			<form class="form-horizontal">
-	  		<fieldset>
-		    	<legend>Registro de Usuario</legend>
-		    	<div class="form-group">
-		    		<label for="nombre" class="col-lg-2 control-label">Nombre</label>
-			      <div class="col-lg-10">
-			        <input type="text" class="form-control" id="nombre" placeholder="Nombre">
-			      </div>	
-        		</div>
-        		<div class="form-group">
-		    		<label for="apellidos" class="col-lg-2 control-label">Apellidos</label>
-			      <div class="col-lg-10">
-			        <input type="text" class="form-control" id="apellidos" placeholder="Apellidos">
-			      </div>	
-        		</div>
-        		<div class="form-group">
-		    		<label for="estado" class="col-lg-2 control-label">Estado</label>
-			      <div class="col-lg-10">
-			        <input type="text" class="form-control" id="estado" placeholder="Estado">
-			      </div>	
-        		</div>
-        		<div class="form-group">
-		    		<label for="municipio" class="col-lg-2 control-label">Municipio</label>
-			      <div class="col-lg-10">
-			        <input type="text" class="form-control" id="municipio" placeholder="Municipio">
-			      </div>	
-        		</div>
-        		<div class="form-group">
-		    		<label for="direccion" class="col-lg-2 control-label">Dirección</label>
-			      <div class="col-lg-10">
-			        <input type="text" class="form-control" id="direccion" placeholder="Dirección">
-			      </div>	
-        		</div>
-        		<div class="form-group">
-		    		<label for="cp" class="col-lg-2 control-label">C.P.</label>
-			      <div class="col-lg-10">
-			        <input type="text" class="form-control" id="cp" placeholder="Codigo Postal">
-			      </div>	
-        		</div>
-			    <div class="form-group">
-			      <label for="inputEmail" class="col-lg-2 control-label">Correo</label>
-			      <div class="col-lg-10">
-			        <input type="text" class="form-control" id="inputEmail" placeholder="Correo">
-			      </div>
-			    </div>
-			    <div class="form-group">
-		    		<label for="telefono" class="col-lg-2 control-label">Telefono</label>
-			      <div class="col-lg-10">
-			        <input type="text" class="form-control" id="telefono" placeholder="Telefono">
-			      </div>	
-        		</div>
-			    <div class="form-group">
-			      <label for="inputPassword" class="col-lg-2 control-label">Password</label>
-			      <div class="col-lg-10">
-			        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-			        <div class="checkbox">
-			          <label>
-			            <input type="checkbox"> Checkbox
-			          </label>
-			        </div>
-			      </div>
-			    </div>
-			    <div class="form-group">
-			      <div class="col-lg-10 col-lg-offset-2">
-			        <button type="reset" class="btn btn-default">Cancel</button>
-			        <button type="submit" class="btn btn-primary">Submit</button>
-			      </div>
-			    </div>
-		  	</fieldset>
-		</form>
+			<form class="form-horizontal" method="POST" action="guardar.php">
+		  		<fieldset>
+			    	<legend>Registro de Usuario</legend>
+			    	<div class="form-group">
+			    		<label for="nombre" class="col-lg-2 control-label">Nombre</label>
+				      <div class="col-lg-10">
+				        <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre">
+				      </div>	
+	        		</div>
+	        		<div class="form-group">
+			    		<label for="apellidos" class="col-lg-2 control-label">Apellidos</label>
+				      <div class="col-lg-10">
+				        <input type="text" name="apellidos" class="form-control" id="apellidos" placeholder="Apellidos">
+				      </div>	
+	        		</div>
+	        		<div class="form-group">
+			    		<label for="estado" class="col-lg-2 control-label">Estado</label>
+				      <div class="col-lg-10">
+				        <input type="text" name="estado" class="form-control" id="estado" placeholder="Estado">
+				      </div>	
+	        		</div>
+	        		<div class="form-group">
+			    		<label for="municipio" class="col-lg-2 control-label">Municipio</label>
+				      <div class="col-lg-10">
+				        <input type="text" name="municipio" class="form-control" id="municipio" placeholder="Municipio">
+				      </div>	
+	        		</div>
+	        		<div class="form-group">
+			    		<label for="direccion" class="col-lg-2 control-label">Dirección</label>
+				      <div class="col-lg-10">
+				        <input type="text" name="direccion" class="form-control" id="direccion" placeholder="Dirección">
+				      </div>	
+	        		</div>
+	        		<div class="form-group">
+			    		<label for="codigopostal" class="col-lg-2 control-label">C.P.</label>
+				      <div class="col-lg-10">
+				        <input type="text" name="codigopostal" class="form-control" id="codigopostal" placeholder="Codigo Postal">
+				      </div>	
+	        		</div>
+				    <div class="form-group">
+				      <label for="correo" class="col-lg-2 control-label">Correo</label>
+				      <div class="col-lg-10">
+				        <input type="text" name="correo" class="form-control" id="correo" placeholder="Correo">
+				      </div>
+				    </div>
+				    <div class="form-group">
+			    		<label for="telefono" class="col-lg-2 control-label">Telefono</label>
+				      <div class="col-lg-10">
+				        <input type="text" name="telefono" class="form-control" id="telefono" placeholder="Telefono">
+				      </div>	
+	        		</div>
+				    <div class="form-group">
+				      <label for="contrasena" class="col-lg-2 control-label">Password</label>
+				      <div class="col-lg-10">
+				        <input type="password" name="contrasena" class="form-control" id="contrasena" placeholder="Password">
+				      </div>
+				    </div>
+				    <div class="form-group">
+				      <div class="col-lg-10 col-lg-offset-2">
+				        <button type="reset" class="btn btn-default">Cancel</button>
+				        <button type="submit" class="btn btn-primary">Submit</button>
+				      </div>
+				    </div>
+			  	</fieldset>
+			</form>
 		</div>
 	</body>
 </html>
